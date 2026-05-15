@@ -3,6 +3,7 @@ using EnterprisePatterns.DemoServices;
 using EnterprisePatterns.Entities;
 using EnterprisePatterns.Repositories;
 using EnterprisePatterns.Services;
+using EnterprisePatterns.UnitsOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,6 +23,8 @@ using IHost host = Host.CreateDefaultBuilder(args)
         //services.AddScoped<IRepository<Order>, GenericOrderRepository>();
         services.AddScoped<IRepository<Order>, GenericOrderRepository>();
         services.AddScoped<IOrderLineRepository, OrderLineRepository>();
+
+		services.AddScoped<CreateOrderWithOrderLinesUnitOfWork>();
     }).Build();
 
 
@@ -34,7 +37,8 @@ try
     logger.LogInformation("Host created.");
 
     // Run a demo service
-    await host.Services.GetRequiredService<RepositoryDemoService>().RunAsync(); 
+    //await host.Services.GetRequiredService<RepositoryDemoService>().RunAsync();
+    await host.Services.GetRequiredService<UnitOfWorkDemoService>().RunAsync();
 }
 catch (Exception generalException)
 {
