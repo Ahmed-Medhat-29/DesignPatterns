@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11911.148 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A - Creational", "A - Creational", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -97,6 +97,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21 - Iterator", "21 - Itera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{95204DB1-6722-4E2A-9D27-876EBC9EBF01}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22 - Visitor", "22 - Visitor", "{773E3063-7B63-4A88-A329-60DB00F75FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{790D356C-BE43-43BD-A21E-C63940ABBC77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,6 +195,10 @@ Global
 		{95204DB1-6722-4E2A-9D27-876EBC9EBF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95204DB1-6722-4E2A-9D27-876EBC9EBF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95204DB1-6722-4E2A-9D27-876EBC9EBF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790D356C-BE43-43BD-A21E-C63940ABBC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790D356C-BE43-43BD-A21E-C63940ABBC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790D356C-BE43-43BD-A21E-C63940ABBC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790D356C-BE43-43BD-A21E-C63940ABBC77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -238,6 +246,8 @@ Global
 		{7CA4713A-4BC6-4040-9E75-512927E8B988} = {5404EB84-EABE-4BEE-8E11-DB4E9EA52A29}
 		{6C348D94-1BDA-45C2-A164-38AFA8446D67} = {4F4EA644-C1CD-4793-9CA7-A6AC5743B0D7}
 		{95204DB1-6722-4E2A-9D27-876EBC9EBF01} = {6C348D94-1BDA-45C2-A164-38AFA8446D67}
+		{773E3063-7B63-4A88-A329-60DB00F75FE3} = {4F4EA644-C1CD-4793-9CA7-A6AC5743B0D7}
+		{790D356C-BE43-43BD-A21E-C63940ABBC77} = {773E3063-7B63-4A88-A329-60DB00F75FE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B8D55FB-F1E4-4099-9C89-9945E4910E1F}
